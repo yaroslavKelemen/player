@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #1d1d1d;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.container .block-music {
+  width: 400px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 3px 6px 20px 5px #0f0f0f;
+          box-shadow: 3px 6px 20px 5px #0f0f0f;
+  height: 600px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.container .block-music .background {
+  position: absolute;
+  width: 400px;
+  height: 100%;
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
+}
+.container .block-music .text {
+  position: absolute;
+  top: 20px;
+  text-align: center;
+}
+.container .block-music .text .music__title {
+  font-size: 25px;
+}
+.container .block-music .text .music__author {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #dbdada;
+}
+.container .block-music .music__image {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 320px;
+  height: 320px;
+  background-image: url("/avengers-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0 0 15px 2px #000;
+          box-shadow: 0 0 15px 2px #000;
+  border-radius: 25px;
+}
+.container .block-music .music {
+  position: absolute;
+  bottom: 130px;
+}
+.container .block-music .music .player {
+  width: 320px;
+  cursor: pointer;
+  height: 3px !important;
+}
+.container .block-music .control-btns {
+  width: 100%;
+  position: relative;
+  position: absolute;
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .block-music .control-btns .download {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+}
+.container .block-music .control-btns .download .downloadIcon {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.container .block-music .control-btns .download .downloadIcon:hover {
+  fill: gray;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.container .block-music .control-btns .play {
+  position: absolute;
+  bottom: 5px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+.container .block-music .control-btns .play .playIcon {
+  width: 70px;
+  height: 70px;
+  fill: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  border-radius: 50%;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.container .block-music .control-btns .play .playIcon:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.container .block-music .control-btns .play .pauseIcon {
+  display: none;
+  width: 70px;
+  height: 70px;
+  fill: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  border-radius: 50%;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.container .block-music .control-btns .play .pauseIcon:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
